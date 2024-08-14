@@ -12,6 +12,7 @@ html,
 body {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
+    min-width: 375px;
 }
 
 a {
@@ -131,6 +132,9 @@ button:hover {
 
 .main-img {
     align-self: flex-end;
+    max-width: 656px;
+    width: 100%;
+
 }
 
 /* ================ Стили для 2-й секции ================ */
@@ -152,6 +156,7 @@ button:hover {
 
 .rates-section .text {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .table {
@@ -374,4 +379,26 @@ small {
     .menu-icon {
         display: block;
     }
+
+    .main-info {
+        margin: 60px 0;
+    }
+
+.main-title {
+    font-size: 52px;
+    line-height: 60px;
+}
+ .account-wrapper {
+    gap: 60px;
+ }
+
+label {
+    white-space: nowrap;
+}
+
+fieldset {
+    flex-wrap: wrap;
+    row-gap: 20px
+}
+
 }
