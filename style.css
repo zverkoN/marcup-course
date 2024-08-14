@@ -88,13 +88,17 @@ button:hover {
     text-transform: uppercase;
 }
 
+.menu-icon {
+    display: none;
+}
+
 /* ================ Стили для 1-й секции ================ */
 
 .main-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    min-height: 800px;
 }
 
 .main-title {
@@ -104,6 +108,8 @@ button:hover {
     line-height: 68px;
     margin-bottom: 30px;
 }
+
+
 
 .main .text {
     margin-bottom: 40px;
@@ -317,4 +323,55 @@ small {
     font-weight: 400;
     line-height: 22px;
     color:#FFF;
+}
+
+/* =================== Адаптив для планшетов =================== */
+
+@media screen and (max-width: 1400px) {
+    .main-wrapper {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .main-info {
+        align-self: flex-start;
+        margin: 100px 0 80px;
+    }
+
+    .main-img {
+        align-self: center;
+    }
+
+    .table {
+        width: 940px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        width: 100%;
+        max-width: 940px;
+    }
+
+    .account-wrapper {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .create-account-section .text {
+        max-width: unset;
+    }
+
+    form {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
